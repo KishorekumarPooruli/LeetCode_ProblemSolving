@@ -42,7 +42,7 @@
         {
             int targetIndex = 0;
             bool isTargentFound = false;
-            int iterationCount = 0;
+            int iterationCount = 0; //// used to Identify target is avaiable directly or checking previous valies in array
             do
             {
                 isTargentFound = nums.Any(y => y == target); //// used LINQ Method
