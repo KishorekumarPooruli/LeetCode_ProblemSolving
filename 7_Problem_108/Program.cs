@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Solution solution = new Solution();
-            solution.SortedArrayToBST(new int[] { 0, 1, 2, 3, 4, 5 });
+            TreeNode outputBinaryTree = solution.SortedArrayToBST(new int[] { 0, 1, 2, 3, 4, 5 });
         }
     }
 
@@ -14,7 +14,7 @@
         public int val;
         public TreeNode left;
         public TreeNode right;
-        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+        public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null, int balfacter = 0)
         {
             this.val = val;
             this.left = left;
@@ -26,7 +26,25 @@
     {
         public TreeNode SortedArrayToBST(int[] nums)
         {
-            //// [-10,-3,0,5,9]
+            return BuildTree(nums, 0, nums.Length - 1);
+        }
+
+        private TreeNode BuildTree(int[] nums, int left, int right)
+        {
+            if (left > right)
+                return null;
+
+            int mid = left + (right - left) / 2;
+            TreeNode node = new TreeNode(nums[mid]);
+            node.left = BuildTree(nums, left, mid - 1);
+            node.right = BuildTree(nums, mid + 1, right);
+
+            return node;
+        }
+
+        public TreeNode SortedArrayToBSTx(int[] nums)
+        {
+            //// [0, 1, 2, 3, 4, 5]
             TreeNode root = new TreeNode();
             if (nums != null && nums.Any())
             {
@@ -130,6 +148,12 @@
                     }
                 }
             }
+        }
+
+
+        private static void CalculateBalanceFactor(TreeNode treeNode)
+        {
+            
         }
     }
 }
