@@ -8,7 +8,8 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\KishoreKumarPooruli\\.nuget\\packages\\": {}
+    "C:\\Users\\KishoreKumarPooruli\\.nuget\\packages\\": {},
+    "G:\\Installation Files\\VisualStudio2022\\VS_Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -19,8 +20,12 @@
       "packagesPath": "C:\\Users\\KishoreKumarPooruli\\.nuget\\packages\\",
       "outputPath": "E:\\Projects\\Source Codes\\LeetCode_ProblemSolving\\4_Problem_35\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "G:\\Installation Files\\VisualStudio2022\\VS_Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\KishoreKumarPooruli\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -67,7 +72,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
