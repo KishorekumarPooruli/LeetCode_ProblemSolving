@@ -1,5 +1,8 @@
 ﻿namespace _15_ProblemNo_303
 {
+    /// <summary>
+    /// https://leetcode.com/problems/range-sum-query-immutable/description/
+    /// </summary>
     internal class Program
     {
         static void Main(string[] args)

@@ -1,5 +1,8 @@
 ﻿namespace _14_ProblemNo_283
 {
+    /// <summary>
+    /// https://leetcode.com/problems/move-zeroes/description/
+    /// </summary>
     internal class Program
     {
         static void Main(string[] args)
