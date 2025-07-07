@@ -11,7 +11,6 @@ namespace _28_ProblemNo_566
         {
             Solution solution = new Solution();
             int[][] mat = { new int[] { 1, 2 } };
-            solution.Testing2();
             //// TIME COMPLECITY: O(N)
             solution.MatrixReshape(mat, 1, 1);
 
