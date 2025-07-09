@@ -2,6 +2,9 @@
 
 namespace _31_ProblemNo_598
 {
+    /// <summary>
+    /// https://leetcode.com/problems/range-addition-ii/?envType=problem-list-v2&envId=array
+    /// </summary>
     internal class Program
     {
         static void Main(string[] args)
